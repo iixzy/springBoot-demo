@@ -6,6 +6,11 @@ server:
   tomcat:
     uri-encoding: utf-8
 spring:
+  # 环境 dev|test|prod
+  profiles:
+    active: dev
+    #引入其他配置文件，例如ftpHX 未配置文件application-ftpHX.yml
+    #include: ftpHX,ftpCloud
   application:
     name: springboot-demo
   datasource:
